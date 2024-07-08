@@ -1,0 +1,878 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* FOR CHANGE OF COLOR IN THE WEBSITE AFTER DESIGNING THE NECESSARY THINGS IN THE JAVASCRIPT AND CSS(create a color variable like this)*/ 
+:root
+{
+    /* Adding colors for the body, nav, and background(bg) */
+    --body-color: #efefef;
+    --nav-color: #3c61af;
+    --bg-color: #fff;
+    --border-color: #3c61af;
+}
+
+/* Creating a new dark theme class*/
+.dark-theme
+{
+    --body-color: #0a0a0a;
+    --nav-color: #000;
+    --bg-color: #000;
+    --border-color: #000;
+}
+
+
+/* Applying it to */
+body
+{
+   /* background-color: #efefef; INITIAL CODE*/
+   background-color: var(--body-color);
+   transition: background 0.3s;
+  
+  
+}
+
+/* adding the --nav-color in place of the background here */
+nav
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background: #3c61af; initial code that was here */
+   background: var(--nav-color);
+   padding: 0px 5%;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   
+   
+}
+
+.logo
+{
+    width: 35%;
+    margin-right: 14px;
+}
+
+.nav_left, .nav_right
+{
+    display: flex;
+    align-items: center;
+}
+/* styling the list items */
+.nav_left ul li
+{
+   list-style: none;
+   display: inline-block;
+}
+/* styling the images */
+.nav_left ul li img
+{
+    width: 23px;
+    margin: 2px 15px;
+    filter: brightness(0) invert(1);
+    
+}
+/* styling the profile */
+.nav-user-icon img
+{
+   width: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+   margin-left: 20px;
+   margin-top: 4px;
+}
+
+
+ .search-box
+ {
+     background: #efefef;
+     width: 80%;
+     border-radius: 20px;
+     display: flex;
+     align-items: center;
+     padding: 0 10px;
+     
+ }
+
+ /* styling the image in the search box */
+ .search-box img
+ {
+   filter: brightness(15) invert(2);
+   width: 5%;
+   
+ }
+
+ .search-box input
+ {
+     width: 80%;
+     background: transparent;
+     padding: 7px ;
+     outline: none;
+     border: 0;
+     font-size: 70%;
+    
+
+ }
+
+  /* the online display */
+  /* .online
+ {
+     position: relative;
+     
+ }
+
+ .online::after
+ {
+     content: "";
+     width: 7px;
+     height: 7px;
+     border: 2px solid #fff;
+     border-radius: 50%;
+     background: #41db51;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    display: none;
+ } 
+ */
+
+   .offline
+ {
+     position: relative;
+     
+ } 
+/* styling the offline icon */
+  .offline::before
+ {
+     content: "";
+     width: 7px;
+     height: 7px;
+     border: 2px solid #fff;
+     border-radius: 50%;
+     background: rgb(181, 179, 179);
+    position: absolute;
+    top: 1px;
+    right: 0;
+    
+ }  
+
+/* let's rather use this to style the online */
+#online
+{
+    content: "";
+    width: 10px;
+    height: 10px;
+    color: white;
+    border-radius: 50%;
+    background: gray;
+    position: absolute;
+    top: 5px;
+    margin-left: -8px;
+    border: 2px solid white;
+    
+}
+
+
+ #inbox
+ {
+     
+    content: "";
+    width: 14px;
+    height: 14px;
+    color: white;
+    border-radius: 50%;
+    background:red;
+    position: absolute;
+    top: 10px;
+    margin-left: -22px;
+    /* border: 2px solid #3c61af; */
+    border: 2px solid var(--border-color);
+    
+    
+ }
+
+ #inbox p
+ {
+     font-size: x-small;
+     text-align: center;
+ }
+
+ 
+ #bell
+ {
+    
+    content: "";
+    width: 14px;
+    height: 14px;
+    color: white;
+    border-radius: 50%;
+    background:red;
+    position: absolute;
+    top: 10px;
+    margin-left: 30px;
+    /* border: 2px solid #3c61af; */
+    border: 2px solid var(--border-color);
+    display: none;
+    
+ }
+
+ #bell p
+ {
+     font-size: x-small;
+     text-align: center;
+ }
+
+ .container
+ {
+     display: flex;
+     justify-content: space-between;
+     padding: 13px 5%;
+ }
+
+  .left-sidebar
+ {
+     flex-basis: 25%;
+     position: sticky;
+     top: 50px;
+     align-self: flex-start;
+     margin-right: 20px;
+     
+ } 
+/* REPLACING BACKGROUND FOR THE RIGHT SIDE BAR */
+  .right-sidebar
+ {
+     flex-basis: 25%;
+     position: sticky;
+     top: 50px;
+     align-self: flex-start;
+     /* background: #fff; initial code that was here*/
+     background: var(--bg-color);
+     padding: 10px;
+     border-radius: 4px;
+     color: #626262;
+    
+ }
+ 
+ .main-content
+ {
+     flex-basis: 50%;
+    position: sticky;
+    margin-right: 50px;
+    
+    
+ }
+
+.social_link
+ {
+     fill: #3c61af;
+     width: 30px;
+     margin-right: 3px;
+     font-size: 1%;
+    
+ }
+ .social_link2
+ {
+     fill: #3c61af;
+     width: 30%;
+    
+    
+    
+     
+    
+ } 
+
+ .social_link, p
+ {
+     font-size: 1em;
+ }
+/* styling the improtanct links */
+ .imp-links a, .shorcut-links a
+ {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+    font-size: 80%;
+    
+ }
+
+ /* Styling the see more link "It will select the last achore tag" --we make use of the LAST CHILD PROPERTY */
+
+.imp-links a:last-child
+{
+    color: #1876f2;
+}
+
+/* Add a border bottom */
+.imp-links
+{
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.shorcut-links a img
+{
+   width: 50%;
+   border-radius: 4px;
+   margin-right: 15px;
+}
+
+.shorcut-links p
+{
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 500 ;
+}
+
+.sidebar-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.sidebar-title h4
+{
+    font-weight: 600;
+    font-size: 90%;
+}
+
+.sidebar-title a
+{
+   text-decoration: none;
+   color: #1876f2;;
+   font-size: 70%;
+}
+
+.event
+{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.left-event
+{
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event p
+{
+    font-size: 70%;
+}
+
+.event a 
+{
+    font-size: 70%;
+    text-decoration: none;
+    color: #1876f2;
+}
+
+.event h3, h4
+{
+    font-size: 80%;
+}
+
+
+
+.left-event span
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1876f2;
+    color: #fff;
+    font-size: 50%;
+    padding: 4px 0;
+}
+
+.location_link
+ {
+     fill: gray;
+     width:5%;
+     
+     
+    
+ }
+
+ .sidebar-ads
+ {
+    width: 60%;
+    margin-bottom: 20px;
+    border-radius: 4px; 
+ }
+
+ .online-list
+ {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px;
+ }
+
+ .online-list .offline img
+{
+    width: 40px;
+    border-radius: 80%;
+    height: 40px;
+    margin-left: 5px;
+}
+
+
+
+.online-list p
+{
+    font-size: 80%;
+    margin-left: 10px;
+    
+}
+
+.online-list .offline::before
+{
+    top: unset;
+    bottom: 5px;
+}
+
+.story-gallery
+{
+   display:flex ;
+   justify-content: space-between;
+   margin-bottom: 20px;
+  
+   
+}
+
+.story
+{
+    flex-basis: 18%;
+    padding-top: 32%;
+    position: relative;
+    
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    
+    
+   
+}
+
+ .story img
+{
+   position: absolute; 
+   width: 40%;
+   height: 20%;
+   border-radius: 50%;
+   top: 4px;
+   left: 3px;
+   border: 3px solid #3c61af;
+}
+
+.story p
+{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: x-small;
+}
+
+.story1
+{
+    background-image:linear-gradient(transparent, rgba(0,0,0,.5)), url(images/chiadi.jpg);
+    
+}
+
+.story2
+{
+    background-image:linear-gradient(transparent, rgba(0,0,0,.5)), url(images/profile1.jpg);
+}
+
+.story3
+{
+    background-image:linear-gradient(transparent, rgba(0,0,0,.5)), url(images/profile4.jpg);
+}
+
+.story4
+{
+    background-image:linear-gradient(transparent, rgba(0,0,0,.5)), url(images/profile5.webp);
+}
+
+.story5
+{
+    background-image:linear-gradient(transparent, rgba(0,0,0,.5)), url(images/profile6.webp);
+}
+
+.story.story1 img
+{
+    top: unset;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border: 0;
+    width: 35px;
+}
+
+/* APPLYING IT HERE TOO */
+.write-post-container
+{
+    width: 100%;
+    /* background: #fff; INITIAL CODE  */
+    background: var(--bg-color);
+    border-radius:6px ;
+    padding: 20px;
+    color: #626262;
+}
+
+.user-profile
+{
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img
+{
+    width: 45px;;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile p
+{
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.user-profile small
+{
+    font-size: 12px;
+}
+
+.feed_link
+{
+    fill: #626262;
+    width: 15px ;
+    margin-right: 30px;
+    margin-left: 10px;
+   
+}
+
+.angle_link
+{
+    fill: #626262;
+    width: 10px ;
+    
+}
+
+.comment_link
+{
+    fill: #626262;
+    width: 18px ;
+    
+}
+
+.share_link
+{
+    fill: #626262;
+    width: 16px ;
+    
+}
+
+.vellips_link
+{
+    fill: #626262;
+    width: 4px;
+    
+}
+
+
+
+.video_link
+{
+    fill: red;
+    width: 18px;
+}
+
+.camera_link
+{
+    fill: green;
+    width: 18px;
+}
+
+.thumbs_link
+{
+    fill: #3c61af;
+    width: 18px;
+}
+
+
+
+.post-input-container
+{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+.post-input-container textarea
+{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    /* hiding the little resize icon */
+    resize: none;
+    margin-right: 0;
+    color:#626262;
+    
+    
+
+}
+
+.add-post-links
+{
+    display: flex;
+    margin-top:10px ;
+}
+
+.add-post-links a
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right: 30px;
+    font-size: x-small;
+}
+
+.add-post-links a img
+{
+    width: 20px;
+    margin-right: 10px;
+}
+/* ADDING IT HERE TOO */
+.post-container
+{
+    width: 100%;
+    /* background: #fff; INITIAL CODE  */
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+
+}
+
+.user-profile span
+{
+    font-size: 12px;
+    color: #9a9a9a;
+}
+
+.post-text
+{
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.post-text a
+{
+    color: #1876f2;
+    text-decoration: none;
+}
+
+.post-img
+{
+   width: 100%;
+   
+   border-radius: 4px;
+   margin-bottom: 5px; 
+}
+
+.post-row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity-icons div img
+{
+    margin: 10px;
+}
+
+.activity-icons div
+{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.post-profile-icon
+{
+    display: flex;
+    align-items:center ;
+}
+
+.post-profile-icon img
+{
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* footer button */
+.load-more
+{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #9a9a9a;
+    color: #626262;
+    background: transparent;
+    border-radius: 4px;
+
+}
+/* Below is the styling of the like button */
+
+#btn1
+{
+    
+    
+    cursor: pointer;
+   
+    border: none;
+    background-color: transparent; 
+}
+
+.thumbs_link:hover
+{
+    fill : #1876f2;
+}
+
+.footer
+{
+    text-align: center;
+    color: #9a9a9a;
+    padding: 10 0 20px;
+    font-size: 13px;
+}
+
+/* settings menu */
+
+.settings-menu 
+{
+    position: absolute;
+    width: 90%;
+    max-width: 350px;
+    background: var(--body-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
+    border-radius: 4px;
+    overflow: hidden;
+    top: 100%;
+    right: 5%;
+    /* To hide the drop down menu */
+    max-height: 0;
+    /* Adding transition for the max height */
+    transition: max-height 0.5s;
+}
+/* This is a fake css class. It is not found any where on the html page JAVASCRIPT USES IT TO MANIPULATE THE HEIGHT OF THE TOGGLE BAR */
+.settings-menu-height
+{
+    max-height: 450px;
+}
+
+.user-profile a
+{
+    font-size: 12px;
+    color: #1876f2;
+    text-decoration: none;
+    
+}
+
+.settings-menu-inner
+{
+    padding: 20px;
+}
+
+.settings-menu hr
+{
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+}
+
+.setting-links
+{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.setting-links .feed_link
+{
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.setting-links a
+{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #626262;
+
+}
+
+/* Code for the dark mode */
+#dark-btn
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s, background 0.5s;
+}
+
+#dark-btn span
+{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* This is a fake css class. It is not found any where on the html page JAVASCRIPT USES IT TO MANIPULATE THE HEIGHT OF THE TOGGLE BAR */
+#dark-btn.dark-btn-on
+{
+    padding-left: 23px;
+    background: black;
+}

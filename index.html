@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seemee</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_left">
+            <img src="images/kpimo.png" class="logo" alt="">
+            <ul id="change_color">
+                
+                <li> <a href="#"><img src="images/notification.png"  alt=""></a> <span id="bell"> <p id="bell-pa">1</p> </span> </li> 
+                <li><a href="#"><img src="images/inbox.png" alt="" ></a><span id="inbox"> <p>1</p> </span></li>
+                <li> <a href="#"><img src="images/tv.png" alt=""></a> </li>
+            </ul>
+        </div>
+        <div class="nav_right">
+
+            <div class="search-box">
+                <img src="images/search.png" class="search" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <!-- JavaScript function is added here -->
+            <div class="nav-user-icon" class="offline" onclick="settingsMenuToggle()">
+                <img src="images/chiadi.jpg" alt="" > <span id="online"></span>
+            </div>
+        </div>
+        <!-- Settings Menu -->
+        
+        <div class="settings-menu"  >
+        <!-- The dark mode code -->
+             <div id="dark-btn" >
+                 <span></span>
+             </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                   
+                    <img src="images/chiadi.jpg" alt=""
+                    width="40px"> 
+                    <div>
+                        <p>Martin Chiadikobi Amadi</p>
+                        <a href="#">View Profile</a>
+                    </div>
+                 </div>
+                 <hr>
+                 <!--  -->
+                 <div class="user-profile">
+                     
+                       
+                    <img id="user-profile1" class="svg feed_link" src="images/message.svg" alt="" 
+                    > 
+                    
+                    <div>
+                        <p> Give Feedback</p>
+                        <a href="#"> Help us improve your user experience</a>
+                    </div>
+                 </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img id="user-profile1" class=" feed_link" src="images/settings.png" alt=""  ><a href="#">Settings & Privacy</a> <img id="location_logo" class="svg angle_link" src="images/angle-left.svg" alt="" >
+                </div>
+
+                <div class="setting-links">
+                    <img id="user-profile1" class="feed_link" src="images/help.png" alt="" ><a href="#">Help & Support</a> <img id="location_logo" class="svg angle_link" src="images/angle-left.svg" alt="" >
+                </div>
+
+                <div class="setting-links">
+                    <img id="user-profile1" class="svg feed_link" src="images/moon.svg" alt="" ><a href="#">Display & Accessibility</a> <img id="location_logo" class="svg angle_link" src="images/angle-left.svg" alt="" >
+                </div>
+
+                <div class="setting-links">
+                    <img id="user-profile1" class=" feed_link" src="images/logout.png" alt="" ><a href="#">logout</a> <img id="location_logo" class="svg angle_link" src="images/angle-left.svg" alt="" >
+                </div>
+
+            </div>
+            
+        </div>
+    </nav>
+    <div class="container">
+        <!-- left side bar -->
+        <div class="left-sidebar">
+           <div class="imp-links">
+               <a href="#"><img id="newspaper_logo" class="svg social_link" src="images/newspaper.svg" alt="" ><p>Latest News</p> </a>
+               <a href="#"><img class="svg social_link" src="images/user.svg" alt=""> <p>friends</p>  </a>
+               <a href="#"><img class="svg social_link" src="images/users.svg" alt=""> <p>Group</p>  </a>
+               <a href="#"><img class="svg social_link" src="images/cart-shopping.svg" alt=""> <p>Market place</p> </a>
+               <a href="#"><img class="svg social_link" src="images/tv.svg" alt=""> <p>Watch</p>  </a>
+               <a href="#">See More</a>
+               <div class="shorcut-links">
+                   <p>Your shortcuts</p>
+                   <a href="#"><img src="images/classroom2.jpg" alt="">Tutorials</a>
+                   <a href="#"><img src="images/group1.jpg" alt="">Business</a>
+                   <a href="#"><img src="images/group2.jpg" alt="">family</a>
+                   <a href="#"><img src="images/group3.jpg" alt="">Hang outs</a>
+               </div>
+           </div>
+        </div>
+        <!-- main content -->
+        <div class="main-content">
+
+           <div class="story-gallery">
+               <div class="story story1">   
+                 <a href="#">
+                    <img id="plus_logo" class="svg social_link2" src="images/plus.svg" alt="">
+                 </a>
+                    
+                 <p>Post Story</p>
+               </div>
+               
+              <div class="story story2">   
+                <a href="#">
+                   <img   src="images/profile1.jpg" alt="">
+                </a>
+                   
+                <p>Mac-Pluto</p>
+              </div>
+              <div class="story story3">   
+                <a href="#">
+                   <img src="images/profile4.jpg" alt="">
+                </a>
+                   
+                <p>Anabel Miriam</p>
+              </div>
+              <div class="story story4">   
+                <a href="#">
+                   <img  src="images/profile5.webp" alt="">
+                </a>
+                   
+                <p>Felix Jakes</p>
+              </div>
+              <div class="story story5">   
+                 <a href="#">
+                    <img src="images/profile6.webp" alt="">
+                 </a>
+                    
+                 <p>Rose Rollex</p>
+               </div>
+           </div>
+           <div class="write-post-container">
+               <div class="user-profile">
+                   
+                  <img src="images/chiadi.jpg" alt=""
+                  width="40px"> 
+                  <div>
+                      <p>Martin Chiadikobi Amadi</p>
+                      <small>Public <img id="location_logo" class="svg angle_link" src="images/angle-down.svg" alt="" > </small>
+                  </div>
+               </div>
+
+               <div class="post-input-container">
+                   <textarea placeholder="What's on your mind, Martin" rows="10"></textarea>
+
+                   <div class="add-post-links">
+                       <a href="#"><img id="location_logo" class="svg video_link" src="images/video.svg" alt="" > Live Video</a>
+                       <a href="#"><img id="location_logo" class="svg camera_link" src="images/camera.svg" alt="" > Live Photo</a>
+                       <button id="btn1" ><img id="location_logo" class="svg thumbs_link" src="images/thumbs-up.svg" alt="" ></button><span class="likee">Like</span>
+                       
+                   </div>
+               </div>
+           </div>
+           <div class="post-container">
+             <div class="post-row">
+                <div class="user-profile">
+                    <img src="/images/chiadi.jpg" alt=""
+                    width="40px"> 
+                    <div>
+                        <p>Martin Chiadikobi Amadi</p>
+                        <span>30th December, 2023 </span>
+                    </div>
+                </div>
+                <a href="#"><img id="location_logo" class="svg vellips_link" src="/images/ellipsis-vertical.svg" alt="" > 
+                </a></a>
+               </div>
+              
+                <p class="post-text">Life isn't hard, we all make it to be. Do good in your little corner, while I do good in my little corner, and Watch with keen interest how magical life could be. <a href="#">#Martin_C</a> <a href="#">#Make_It_Poetic</a> </p>
+                <img src="images/group.jpg" alt="" class="post-img">
+
+             <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <button id="btn1" ><img id="location_logo" class="svg thumbs_link" src="images/thumbs-up.svg" alt="" ></button>
+                            <p>120</p>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img id="location_logo" class="svg comment_link" src="/images/comment.svg" alt="" > 
+                            </a>
+                            <p>20</p>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img id="location_logo" class="svg share_link" src="/images/share.svg" alt="" > 
+                            </a>
+                            <p>45</p>
+                        </div>
+                        
+                    </div>
+                   <div class="post-profile-icon">
+                     <img src="images/chiadi.jpg" alt=""> <img id="location_logo" class="svg angle_link" src="/images/angle-down.svg" alt="" >
+                   </div>
+               </div>
+           </div> 
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                  
+                   <img src="/images/chiadi.jpg" alt=""
+                   width="40px"> 
+                   <div>
+                       <p>Martin Chiadikobi Amadi</p>
+                       <span>12th December, 2023 </span>
+                   </div>
+               </div>
+               <a href="#"><img id="location_logo" class="svg vellips_link" src="/images/ellipsis-vertical.svg" alt="" > 
+               </a></a>
+              </div>
+             
+               <p class="post-text"> Meet Michael, Brian and Victor Futo's latest Mechanical Engineering gurus <a href="#">#Martin_C</a> <a href="#">#Engineering_for_Service</a> </p>
+               <img src="images/mech1.jpg" alt="" class="post-img">
+
+            <div class="post-row">
+                   <div class="activity-icons">
+                       <div>
+                           <button id="btn1" ><img id="location_logo" class="svg thumbs_link" src="images/thumbs-up.svg" alt="" ></button>
+                           <p>50</p>
+                       </div>
+                       <div>
+                           <a href="#">
+                               <img id="location_logo" class="svg comment_link" src="/images/comment.svg" alt="" > 
+                           </a>
+                           <p>30</p>
+                       </div>
+                       <div>
+                           <a href="#">
+                               <img id="location_logo" class="svg share_link" src="/images/share.svg" alt="" > 
+                           </a>
+                           <p>25</p>
+                       </div>
+                       
+                   </div>
+                  <div class="post-profile-icon">
+                    <img src="images/chiadi.jpg" alt=""> <img id="location_logo" class="svg angle_link" src="/images/angle-down.svg" alt="" >
+                  </div>
+              </div>
+          </div>
+          
+          <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                  
+                   <img src="/images/chiadi.jpg" alt=""
+                   width="40px"> 
+                   <div>
+                       <p>Martin Chiadikobi Amadi</p>
+                       <span>30th December, 2023 </span>
+                   </div>
+               </div>
+               <a href="#"><img id="location_logo" class="svg vellips_link" src="/images/ellipsis-vertical.svg" alt="" > 
+               </a></a>
+              </div>
+             
+               <p class="post-text">This is Ngozi Iweka <em>Miss Beauty</em> who says she is ready to settle down with her speck of man. Funny enough she listed out the qualities she so needs in her potential husband <a href="#">#Martin_C</a> <a href="#">#That_moment_when_you_think_you'v
+                   
+                
+                e_seen_it_all</a> </p>
+               <img src="images/dat.jpg" alt="" class="post-img">
+
+            <div class="post-row">
+                   <div class="activity-icons">
+                       <div>
+                           <button id="btn1" ><img id="location_logo" class="svg thumbs_link" src="images/thumbs-up.svg" alt="" ></button>
+                           <p>139</p>
+                       </div>
+                       <div>
+                           <a href="#">
+                               <img id="location_logo" class="svg comment_link" src="/images/comment.svg" alt="" > 
+                           </a>
+                           <p>250</p>
+                       </div>
+                       <div>
+                           <a href="#">
+                               <img id="location_logo" class="svg share_link" src="/images/share.svg" alt="" > 
+                           </a>
+                           <p>73</p>
+                       </div>
+                       
+                   </div>
+                  <div class="post-profile-icon">
+                    <img src="images/chiadi.jpg" alt=""> <img id="location_logo" class="svg angle_link" src="/images/angle-down.svg" alt="" >
+                  </div>
+              </div>
+          </div>
+
+        <button type="button" class="load-more">Load More</button>
+
+
+        </div>
+        <!-- right side bar -->
+        <div class="right-sidebar">
+
+           <div class="sidebar-title">
+               <h4>Events</h4>
+               <a href="#">See All</a>
+           </div>
+           <div class="event">
+               <div class="left-event">
+                   <h3>1</h3>
+                   <span>October</span>
+               </div>
+               <div class="rigth-event">
+                   <h4>Independence Celebration</h4>
+                   <p><img id="location_logo" class="svg location_link" src="/images/location-dot.svg" alt="" > Aso-Rock villa, Abuja</p>
+                   <a href="#">More Info</a>
+               </div>
+           </div>
+           <div class="event">
+            <div class="left-event">
+                <h3>4</h3>
+                <span>July</span>
+            </div>
+            <div class="rigth-event">
+                <h4>U.S.A Independence Celebration</h4>
+                <p><img id="location_logo" class="svg location_link" src="images/location-dot.svg" alt="" > 112WA main Street, Chicago</p>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+        <div class="sidebar-title">
+            <h4>Advertisement</h4>
+            <a href="#">Close</a>
+        </div>
+         <img src="images/group1.jpg" alt="" class="sidebar-ads">
+
+         <div class="sidebar-title">
+            <h4>Conversation</h4>
+            <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+            <div class="offline">
+                <img src="images/profiel2.jpg" alt="" >
+            </div>
+            <p>Morrison Jack</p>
+        </div>
+        <!--  -->
+        <div class="online-list">
+            <div class="offline">
+                <img src="images/profile3.jpg" alt="">
+            </div>
+            <p>Prince Brown</p>
+        </div>
+        <!--  -->
+        <div class="online-list">
+            <div class="offline">
+                <img src="images/profile6.webp" alt="" >
+            </div>
+            <p>Rose Rollexx</p>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="footer">Copyright 2023 - Prime" Solutions</div>
+
+
+    <script src="scripts/jquery-1.6.2.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/navbar.js"></script>
+</body>
+</html>
